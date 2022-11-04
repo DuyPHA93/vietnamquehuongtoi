@@ -1,0 +1,178 @@
+* {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+main {
+    padding-bottom: 40px;
+}
+
+.wrapper {
+    padding: 0px 8%;
+}
+
+.header-top {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.header-top .menu {
+    float: left;
+    margin-right: 15px;
+}
+
+.header-top .menu:last-child {
+    margin-right: 0px;
+}
+
+.header-top .menu .menu-icon + .menu-text {
+    margin-left: 3px;
+}
+
+.header-top .menu .hotline {
+    color: #f58220;
+    font-weight: 700;
+    
+    text-decoration: none;
+}
+.header-top .menu .hotline span {
+    font-size: .95em;
+}
+
+.header-top .menu .search-btn {
+    color: #777;
+}
+
+header {
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top: -30px;
+}
+
+header .logo img {
+    width: 200px;
+    height: auto;
+}
+
+.navigation {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.navigation .menu {
+    padding: 0px 18px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.7;
+    font-size: 1.6rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.navigation .menu:last-child {
+    padding-right: 0px;
+}
+
+.navigation .menu a {
+    text-decoration: none;
+    color: #217505;
+    transition: color ease .2s;
+}
+.navigation .menu.active a,
+.navigation .menu a:hover {
+    color: #f58220;
+}
+
+footer {
+    padding: 14px 0px;
+    color: #666;
+    background-color:rgb(247, 247, 247);
+}
+
+footer span, footer strong, footer .navi a {
+    font-size: .9em;
+}
+
+footer .menu-column {
+    text-align: right;
+}
+
+footer .navi {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+footer .navi .menu {
+    float: left;
+    /* margin-right: 20px; */
+}
+
+footer .navi .menu:not(:last-child)::after {
+    content: "|";
+    margin-left: 7px;
+    margin-right: 10px;
+}
+
+footer .navi .menu:last-child {
+    margin-right: 0;
+}
+
+footer .navi a {
+    text-decoration: none;
+    color: #666;
+    transition: color ease .2s;
+}
+
+footer .navi a:hover {
+    color: #f58220;
+}
+
+@media only screen and (max-width: 500px) {
+    .navigation .menu {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 14px;
+    }
+
+    footer .menu-column {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    header .logo {
+        position: static;
+        padding-bottom: 10px;
+    }
+
+    header .logo img {
+        display: block;
+        margin: auto;
+    }
+
+    .navigation .menu {
+        font-size: 1.4em;
+    }
+}

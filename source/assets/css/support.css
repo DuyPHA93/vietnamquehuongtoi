@@ -1,0 +1,124 @@
+.supper-wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+.supper-wrapper .heading-title {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 1.2em;
+}
+
+.supper-wrapper .heading-title::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background: rgba(51, 51, 51, 0.2);
+    bottom: 0;
+}
+
+.detail-info {
+    list-style-type: none;
+    margin: 50px 0px;
+    padding: 0;
+}
+
+.detail-info li {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.detail-info .icon-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icon-info .icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    border-color: #f58220;
+    background-color: #f58220;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-info .text-info {
+    padding-left: 50px;
+}
+
+.detail-info mark {
+    color: #999;
+    background: none;
+    font-style: italic;
+    display: block;
+}
+
+.detail-info address {
+    font-weight: 700;
+    color: black;
+}
+
+.detail-info a, .detail-info a:hover {
+    text-decoration: none !important;
+    color: #f58220 !important;
+    font-weight: 700;
+}
+
+.form-support .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-support input, .form-support textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1.5em;
+    border-radius: 3px;
+    color: #333;
+    padding: .7em;
+    border: 1px solid #cacaca;
+    background-color: #fefefe;
+    box-shadow: inset 0 1px 2px rgba(10,10,10,.1) !important;
+    line-height: 1.5;
+}
+
+.form-support input:last-child {
+    margin-bottom: 0px;
+}
+
+.form-support input:focus, .form-support textarea:focus {
+    border: 1px solid #8a8a8a !important;
+}
+
+.form-support textarea {
+    min-height: 150px;
+    height: 100%;
+}
+
+.form-support .btn {
+    padding: .5em 1.3em !important;
+}
+
+.form-support .btn.btn-orange {
+    background-color: #f58220;
+    color: #fff;
+    font-size: 1em;
+}
+
+.form-support .require-text {
+    text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .form-support .require-text {
+        text-align: left;
+    }
+}
